@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm NFswilam</h1>
+<h1 align="center">Hi 👋, I'm mohamed-swilam</h1>
 <h3 align="center">Full-Stack & Backend Developer | Junior Penetration Tester | CTF Creator</h3>
 
 ---
@@ -120,18 +120,18 @@ A custom web-exploitation challenge with environment + full solution path.
 
 ## 📊 GitHub Stats
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=NFswilam&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=mohamed-swilam&show_icons=true&theme=tokyonight" />
   <br/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NFswilam&theme=tokyonight" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohamed-swilam&theme=tokyonight" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NFswilam&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohamed-swilam&layout=compact&theme=tokyonight" />
 </p>
 
 ---
 
 ## 📫 Contact
-- **Email:** midoeljoker30@gmail.com  
-- **GitHub:** github.com/NFswilam  
+- **Email:** swilam.per@gmail.com  
+- **GitHub:** github.com/mohamed-swilam
 
 ---
 
