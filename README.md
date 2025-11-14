@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm mohamed-swilam</h1>
+<h1 align="center">Hi 👋, I'm Mohamed Hamad Swilam</h1>
 <h3 align="center">Full-Stack & Backend Developer | Junior Penetration Tester | CTF Creator</h3>
 
 ---
@@ -13,7 +13,6 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 - 🔐 Strong background in API Security, web exploitation, and secure development practices  
 - 🏆 CTF Player & Challenge Creator (Farm CTF)  
 - 🖥️ ECPC problem-solving background  
-- 🐱 Owner of 23 cats 😹  
 
 ---
 
