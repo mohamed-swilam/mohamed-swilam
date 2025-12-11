@@ -19,7 +19,7 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 ## 🛠️ Tech Stack
 
 ### 🔧 **Backend**
-- Node.js, Express.js, Mongoose  
+- Node.js, Express.js, Mongoose, NestJS, TypeORM
 - REST APIs, Authentication, Authorization  
 - JWT, OAuth2, Sessions, Cookies  
 - Clean Architecture, MVC, API Security  
@@ -33,8 +33,8 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 - SEO Optimization & Rendering Strategies
 
 ### 🗄️ **Database**
-- MongoDB (Schema Design, Indexing, Aggregations)  
-- NoSQL Architecture  
+- MongoDB, MySQL (Schema Design, Indexing, Aggregations)
+- SQL & NoSQL Architecture  
 - Secure File Handling
 
 ### 🛡️ **Cybersecurity**
@@ -62,13 +62,15 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 
 ## 🏗️ Projects
 
-### 🚀 **DeverCrowd — Co-Founder & CTO**
-A production-grade full-stack platform built with:  
-- **Next.js frontend + backend routes**  
-- Custom authentication (JWT, OAuth, Sessions)  
-- Scalable MongoDB schemas  
-- CI/CD, cloud deployments, and app security  
-- Leadership: Managed frontend/backed/UI-UX workflows
+### 🚀 **DeverCrowd**
+- **Overview:** Developed a startup portfolio web application to showcase the company’s vision, services, and projects, providing a professional online presence with a fully controlled admin dashboard.  
+- **Key Features:** Admin authentication system, content management dashboard, dynamic control of website sections, services and projects management, blog/news management, contact messages management, and rolebased access.  
+- **Technology:** Node.js, Express.js, MongoDB, Mongoose, RESTful APIs, JWT Authentication, React, NextJS, HTML5, CSS3, Tailwind, JavaScript.  
+ 
+### 🚀 **SecureMail**
+- **Overview:** Developed a secure email client that integrates cybersecurity scanning to detect threats and protect emails in real-time, with an admin dashboard for monitoring and management.  
+- **Key Features:** Secure login, email sending/receiving, phishing and spam detection, malicious link and attachment scanning, AI email analysis, threat reports, and dashboard analytics.  
+- **Technology:** Node.js, Nest.js, MySQL, REST APIs, JWT, Gmail API, Outlook API, IMAP/SMTP, ChatGPT API, VirusTotal API, React, Next.js, Tailwind CSS, JavaScript.  
 
 ### 🔐 **Full User Auth Methods**
 Authentication service supporting:  
