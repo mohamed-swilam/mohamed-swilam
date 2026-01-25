@@ -25,14 +25,6 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 
 💡 **Skills:** REST APIs, Authentication, Authorization, JWT, OAuth2, Sessions, Cookies, Clean Architecture, MVC, API Security, Performance Optimization, Deployment
 
-### 🧩 Full-Stack / Frontend
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://mui.com/)
-
-💡 **Skills:** App Router, React Server Components, Server Actions, API Routes, SEO Optimization, Rendering Strategies
-
 ### 🗄️ Database
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
@@ -42,6 +34,15 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 [![Prisma](https://img.shields.io/badge/prisma-17a395?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
 
 💡 **Skills:** Schema Design, Indexing, Aggregations, SQL & NoSQL Architecture, Secure File Handling
+
+### 🧩 Frontend
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Shadcn UI](https://img.shields.io/badge/shadcnui-000000?style=for-the-badge&logo=shadcnui&logoColor=white)](https://ui.shadcn.com/)
+
+💡 **Skills:** App Router, React Server Components, Server Actions, API Routes, SEO Optimization, Rendering Strategies
+
 
 ### 🛡️ Cybersecurity
 [![Burp Suite](https://img.shields.io/badge/Burp%20Suite-F24D27?style=for-the-badge&logo=burpsuite&logoColor=white)](https://portswigger.net/burp)
