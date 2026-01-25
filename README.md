@@ -18,14 +18,10 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 
 ## 🛠️ Tech Stack
 
-### 🔧 Backend
+### 🔧 Backend & Database
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com/)
-
-💡 **Skills:** REST APIs, Authentication, Authorization, JWT, OAuth2, Sessions, Cookies, Clean Architecture, MVC, API Security, Performance Optimization, Deployment
-
-### 🗄️ Database
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![PostgreSql](https://img.shields.io/badge/postgresql-2479A2?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.com/)
@@ -33,7 +29,7 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 [![TypeORM](https://img.shields.io/badge/TypeORM-315CDB?style=for-the-badge&logo=typeorm&logoColor=white)](https://typeorm.io/)
 [![Prisma](https://img.shields.io/badge/prisma-17a395?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
 
-💡 **Skills:** Schema Design, Indexing, Aggregations, SQL & NoSQL Architecture, Secure File Handling
+💡 **Skills:** REST APIs, Authentication, Authorization, JWT, OAuth2, Sessions, Cookies, Clean Architecture, MVC, API Security, Performance Optimization, Deployment, Schema Design, Indexing, Aggregations, SQL & NoSQL Architecture, Secure File Handling
 
 ### 🧩 Frontend
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
