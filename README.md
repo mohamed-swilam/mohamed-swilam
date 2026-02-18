@@ -1,6 +1,11 @@
+
 <h1 align="center">Hi 👋, I'm Mohamed Hamad Swilam</h1>
 <h3 align="center">Full-Stack Engineer  | Cybersecurity Researcher | CTF Creator</h3>
 
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:swilam.per@gmail.com)  
+[![Phone](https://img.shields.io/badge/Phone-+20%20103%200141149-blue?style=for-the-badge&logo=phone&logoColor=white)](tel:+201030141149)  
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohamed-swilam)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swilam-dev)
 ---
 
 ## 👨‍💻 About Me
@@ -8,8 +13,8 @@ A hybrid engineer combining **backend development**, **full-stack engineering**,
 Skilled in building secure, scalable systems and discovering vulnerabilities in real-world web applications.
 
 - 🛡️ Junior Pentester with **30+ discovered vulnerabilities**  
-- 🧠 Backend & Full-Stack Developer specializing in **Node.js, MongoDB, and Next.js**  
-- 🚀 Co-founder & CTO of **DeverCrowd**  
+- 🧠 Backend & Full-Stack Developer specializing in **Node.js(NestJs, ExpressJs), and React(Next.js)**  
+- 🚀 Co-founder of **DeverCrowd**  
 - 🔐 Strong background in API Security, web exploitation, and secure development practices  
 - 🏆 CTF Player & Challenge Creator (Farm CTF)  
 - 🖥️ ECPC problem-solving background  
@@ -80,35 +85,15 @@ Skilled in building secure, scalable systems and discovering vulnerabilities in 
 - **Overview:** Developed a startup portfolio web application to showcase the company’s vision, services, and projects, providing a professional online presence with a fully controlled admin dashboard.  
 - **Key Features:** Admin authentication system, content management dashboard, dynamic control of website sections, services and projects management, blog/news management, contact messages management, and rolebased access.  
 - **Technology:** Node.js, Express.js, MongoDB, Mongoose, RESTful APIs, JWT Authentication, React, NextJS, HTML5, CSS3, Tailwind, JavaScript.  
+- **Repo:**
+<a href="https://github.com/DeverCrowd/UpdatedDeverCrowd"><img width="50%" height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=DeverCrowd&repo=DeverCrowd-Portfolio&theme=react&bg_color=1F222E&title_color=169D7f&hide_border=true&icon_color=F8D866&show_icons=false" alt="SecureMail"></a>
  
 ### 🚀 **SecureMail**
 - **Overview:** Developed a secure email client that integrates cybersecurity scanning to detect threats and protect emails in real-time, with an admin dashboard for monitoring and management.  
 - **Key Features:** Secure login, email sending/receiving, phishing and spam detection, malicious link and attachment scanning, AI email analysis, threat reports, and dashboard analytics.  
 - **Technology:** Node.js, Nest.js, MySQL, REST APIs, JWT, Gmail API, Outlook API, IMAP/SMTP, ChatGPT API, VirusTotal API, React, Next.js, Tailwind CSS, JavaScript.  
-
-### 🔐 **Full User Auth Methods**
-Authentication service supporting:  
-- JWT  
-- OAuth 2.0  
-- Sessions  
-- RBAC  
-With a simple UI and secure backend architecture.
-
-### 📅 **Events Tracker**
-- REST API for events (create/edit/filter)  
-- Secure user access & clean architecture  
-
-### ✍️ **Blog Handler**
-- CRUD posts, categories, roles  
-- Scalable backend + simple UI  
-
-### 🧾 **Receipt Management**
-- Upload/organize/retrieve receipts  
-- Secure backend logic & file handling  
-
-### 🧬 **Farm CTF**
-A custom web-exploitation challenge with environment + full solution path.
-
+- **Repo:**
+<a href="https://github.com/The-Team-Dream/SecureMail"><img width="50%" height="150" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=The-Team-Dream&repo=SecureMail&theme=react&bg_color=1F222E&title_color=169D7f&hide_border=true&icon_color=F8D866&show_icons=false" alt="SecureMail"></a>
 ---
 
 ## 🏆 Cybersecurity Achievements
@@ -133,14 +118,16 @@ A custom web-exploitation challenge with environment + full solution path.
 
 ---
 
+
 ## 📊 GitHub Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=mohamed-swilam&show_icons=true&theme=tokyonight" />
   <br/>
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=mohamed-swilam&theme=tokyonight" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohamed-swilam&layout=compact&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?user=mohamed-swilam&layout=compact&theme=tokyonight&langs_count=5" />
 </p>
+
 
 ---
 
