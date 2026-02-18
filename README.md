@@ -1,6 +1,8 @@
-# Hi 👋, I'm Mohamed Hamad Swilam
-## Full-Stack Engineer  | Cybersecurity Researcher | CTF Creator
+<div align="center">
+# Mohamed Hamad Swilam — Full-Stack Developer & Cybersecurity Researcher
 
+**Contact:** [swilam.per@gmail.com](mailto\:swilam.per@gmail.com) • +201030141149 • [GitHub](https://github.com/mohamed-swilam) • [LinkedIn](https://www.linkedin.com)
+<div/>
 ---
 
 ## 👨‍💻 About Me
