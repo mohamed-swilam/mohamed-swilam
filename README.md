@@ -24,6 +24,16 @@
     <img src="https://cdn.simpleicons.org/whatsapp/gree" width="28" />
   </a>
 </p>
+<a  align="center" href="YourCV.pdf" download style="
+    background-color:#007ACC;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+">
+    Download My CV
+</a>
 
 
 ---
