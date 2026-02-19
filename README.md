@@ -43,7 +43,7 @@ Familiar with frontend technologies for seamless collaboration when needed.
 - 🔐 Strong background in API Security, web exploitation, and secure development practices  
 - 🛡️ Junior Pentester with **30+ discovered vulnerabilities**  
 - 🏆 CTF Player & Challenge Creator (Farm CTF)  
-- 🖥️ ECPC problem-solving background  
+- 🖥️ Competitive Programming Participant (ECPC) background  
 - 🚀 Co-founder of **DeverCrowd**  
 
 ---
