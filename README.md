@@ -146,8 +146,7 @@ Familiar with frontend technologies for seamless collaboration when needed.
 ---
 
 ## 🏆 Cybersecurity Achievements
-- Listed in **Bug Bounty Hall of Fames**  
-  *(ClassDojo, Daimler Truck, ION Group, etc.)*  
+- Listed in **Bug Bounty Hall of Fames** *(ClassDojo, Daimler Truck, ION Group, etc.)*  
 - 30+ vulnerabilities reported with high-quality POCs  
 - Designed and hosted CTF challenges  
 - Experienced in recon automation, payload crafting, impact analysis  
@@ -163,7 +162,7 @@ Familiar with frontend technologies for seamless collaboration when needed.
 - **eLearnSecurity**  
   - eJPT  
   - eWAPT  
-  - eWAPTX *(in progress)*  
+  - eWAPTX *(in progress)*
 
 ---
 
