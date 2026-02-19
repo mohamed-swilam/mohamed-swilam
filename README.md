@@ -2,7 +2,7 @@
   <img src="./readme-photo.png" alt="Hero Banner" />
 </p>
 <h1 align="center">Hi 👋, I'm Mohamed Hamad Swilam</h1>
-<h3 align="center">Full-Stack Engineer  | Cybersecurity Researcher</h3>
+<h3 align="center">Backend Engineer | Security-Focused Developer</h3>
 <p align="center">
   <a href="mailto:swilam.per@gmail.com" style="text-decoration: none;">
     <img src="https://cdn.simpleicons.org/gmail/EA4335" width="28" />
@@ -25,13 +25,17 @@
   </a>
 </p>
 
+[![Backend](https://img.shields.io/badge/Backend-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Security](https://img.shields.io/badge/Security-F24D27?style=for-the-badge&logo=owasp&logoColor=white)](https://owasp.org/)
 
 
 ---
 
 ## 👨‍💻 About Me
-A hybrid engineer combining **backend development**, **full-stack engineering**, and **offensive security**.  
-Skilled in building secure, scalable systems and discovering vulnerabilities in real-world web applications.
+Backend-focused engineer specializing in building secure, scalable, and high-performance server-side systems.  
+Strong expertise in RESTful API design, authentication & authorization, database architecture, and security best practices.  
+Experienced in penetration testing, vulnerability discovery, and developing production-ready backend systems.  
+Familiar with frontend technologies for seamless collaboration when needed.
 
 - 🛡️ Junior Pentester with **30+ discovered vulnerabilities**  
 - 🧠 Backend & Full-Stack Developer specializing in **Node.js(NestJs, ExpressJs), and React(Next.js)**  
