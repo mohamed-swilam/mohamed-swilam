@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.png" alt="Hero Banner" />
+  <img src="./banner2.png" alt="Hero Banner" />
 </p>
 <h1 align="center">Hi 👋, I'm Mohamed Hamad Swilam</h1>
 <h3 align="center">Full Stack Engineer | Security-Focused Developer</h3>
