@@ -19,6 +19,7 @@
     setTimeout(() => {
         bootEl.classList.add('hidden');
         initHeroAnimations();
+        ScrollTrigger.refresh();
     }, 2600);
 })();
 
@@ -311,26 +312,29 @@ gsap.from('.terminal-window', {
     ease: 'power2.out',
 });
 
-// gsap.from('.decor-card', {
-//     scrollTrigger: {
-//         trigger: '#about',
-//         start: 'top 80%',
-//     },
-//     opacity: 0,
-//     y: 30,
-//     stagger: 0.12,
-//     duration: 0.5,
-//     ease: 'power2.out',
-// });
+gsap.from('.decor-card', {
+    scrollTrigger: {
+        trigger: '.about-decor',
+        start: 'top 85%',
+        toggleActions: 'play none none none',
+    },
+    autoAlpha: 0,
+    y: 30,
+    stagger: 0.12,
+    duration: 0.6,
+    ease: 'power2.out',
+});
 
 // ---- Timeline ----
 gsap.from('.timeline-item', {
     scrollTrigger: {
-        trigger: '#experience',
-        start: 'top 75%',
+        trigger: '.timeline',
+        start: 'top 85%',
+        toggleActions: 'play none none none',
     },
-    opacity: 0,
+    autoAlpha: 0,
     x: -40,
+    stagger: 0.2,
     duration: 0.8,
     ease: 'power2.out',
 });
@@ -338,10 +342,11 @@ gsap.from('.timeline-item', {
 // ---- Project Cards ----
 gsap.from('.project-card', {
     scrollTrigger: {
-        trigger: '#projects',
-        start: 'top 75%',
+        trigger: '.projects-grid',
+        start: 'top 85%',
+        toggleActions: 'play none none none',
     },
-    opacity: 0,
+    autoAlpha: 0,
     y: 50,
     stagger: 0.15,
     duration: 0.7,
@@ -349,17 +354,18 @@ gsap.from('.project-card', {
 });
 
 // ---- Skill Modules ----
-// gsap.from('.skill-module', {
-//     scrollTrigger: {
-//         trigger: '#skills',
-//         start: 'top 75%',
-//     },
-//     opacity: 0,
-//     y: 40,
-//     stagger: 0.1,
-//     duration: 0.6,
-//     ease: 'power2.out',
-// });
+gsap.from('.skill-module', {
+    scrollTrigger: {
+        trigger: '.skills-grid',
+        start: 'top 85%',
+        toggleActions: 'play none none none',
+    },
+    autoAlpha: 0,
+    y: 40,
+    stagger: 0.1,
+    duration: 0.6,
+    ease: 'power2.out',
+});
 
 // ---- Education ----
 gsap.from('.edu-degree', {
@@ -410,7 +416,7 @@ gsap.from('.contact-container', {
 });
 
 // ========================
-// PROJECT CARD TILT EFFECT
+// PROJECT CARD TILT EFFECT (Fixed with GSAP)
 // ========================
 document.querySelectorAll('.project-card').forEach((card) => {
     card.addEventListener('mousemove', (e) => {
@@ -419,19 +425,29 @@ document.querySelectorAll('.project-card').forEach((card) => {
         const y = e.clientY - rect.top;
         const cx = rect.width / 2;
         const cy = rect.height / 2;
-        const rotX = ((y - cy) / cy) * -6;
-        const rotY = ((x - cx) / cx) * 6;
+        const rotX = ((y - cy) / cy) * -8;
+        const rotY = ((x - cx) / cx) * 8;
 
-        card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.02)`;
+        gsap.to(card, {
+            rotationX: rotX,
+            rotationY: rotY,
+            scale: 1.02,
+            duration: 0.2,
+            ease: 'power2.out',
+            overwrite: 'auto',
+            transformPerspective: 1000
+        });
     });
 
     card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(800px) rotateX(0) rotateY(0) scale(1)';
-        card.style.transition = 'transform 0.4s ease';
-    });
-
-    card.addEventListener('mouseenter', () => {
-        card.style.transition = 'transform 0.1s ease';
+        gsap.to(card, {
+            rotationX: 0,
+            rotationY: 0,
+            scale: 1,
+            duration: 0.4,
+            ease: 'power2.out',
+            overwrite: 'auto'
+        });
     });
 });
 
@@ -472,6 +488,30 @@ document.querySelectorAll('.project-card').forEach((card) => {
             toggle.classList.remove('active');
             links.classList.remove('open');
         }
+    });
+})();
+
+// ========================
+// ACTIVE NAV LINK TRACKING
+// ========================
+(function activeNavLinkTracking() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    sections.forEach((section) => {
+        ScrollTrigger.create({
+            trigger: section,
+            start: 'top 40%',
+            end: 'bottom 40%',
+            onToggle: (self) => {
+                if (self.isActive) {
+                    const id = section.getAttribute('id');
+                    navLinks.forEach((link) => {
+                        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                    });
+                }
+            },
+        });
     });
 })();
 
@@ -580,9 +620,16 @@ if (footerYear) {
 // ========================
 (function terminalTyping() {
     const termText = document.querySelector('.term-text');
-    if (!termText) return;
+    const terminalBody = document.querySelector('.terminal-body');
+    if (!termText || !terminalBody) return;
 
+    // Get current text and measure height to prevent layout shift
     const originalText = termText.textContent;
+    
+    // Set a fixed min-height based on current content before clearing it
+    const rect = terminalBody.getBoundingClientRect();
+    terminalBody.style.minHeight = `${rect.height}px`;
+
     termText.textContent = '';
     termText.style.visibility = 'visible';
 
@@ -601,6 +648,10 @@ if (footerYear) {
                     termText.textContent += originalText[i];
                     i++;
                     setTimeout(typeChar, 12);
+                } else {
+                    // Once typing is done, we can remove the fixed height 
+                    // to keep it responsive if the window resizes
+                    terminalBody.style.minHeight = 'auto';
                 }
             }
             typeChar();

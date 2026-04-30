@@ -188,6 +188,13 @@ body.cursor-hover #cursor-ring {
 .nav-links a:hover { color: var(--accent-cyan); }
 .nav-links a:hover::after { width: 100%; }
 
+.nav-links a.active {
+    color: var(--accent-cyan);
+}
+.nav-links a.active::after {
+    width: 100%;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -530,7 +537,7 @@ body.cursor-hover #cursor-ring {
     padding: 20px;
     text-align: center;
     background: var(--bg-card);
-    transition: all 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 .decor-card:hover {
     border-color: var(--accent-cyan);
@@ -589,7 +596,7 @@ body.cursor-hover #cursor-ring {
     border-radius: 6px;
     padding: 24px;
     background: var(--bg-card);
-    transition: all 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
 }
 .timeline-card:hover {
     border-color: var(--accent-cyan);
@@ -759,20 +766,32 @@ body.cursor-hover #cursor-ring {
 }
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
-@media (max-width: 400px) {
-    .skills-grid { grid-template-columns: 1fr; }
+
+@media (max-width: 1100px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 .skill-module {
     border: 1px solid var(--border-subtle);
     border-radius: 6px;
     padding: 24px;
     background: var(--bg-card);
-    transition: all 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
     position: relative;
     overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .skill-module::before {
     content: '';
@@ -1024,6 +1043,11 @@ body.cursor-hover #cursor-ring {
 .contact-container {
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .contact-tagline {
     font-family: var(--font-mono);
@@ -1032,29 +1056,29 @@ body.cursor-hover #cursor-ring {
     margin-bottom: 24px;
     letter-spacing: 1px;
 }
-.contact-email {
+.contact-link {
     display: inline-block;
     font-family: var(--font-mono);
-    font-size: clamp(20px, 4vw, 36px);
-    font-weight: 700;
+    font-size: clamp(16px, 4vw, 28px);
     color: var(--accent-cyan);
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     transition: all 0.3s;
     position: relative;
+    text-decoration: none;
 }
-.contact-email:hover {
-    text-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+.contact-link i {
+    margin-right: 12px;
+    color: var(--accent-cyan);
+    font-size: 0.9em;
 }
-.contact-phone {
-    display: inline-block;
-    font-family: var(--font-mono);
-    font-size: 16px;
-    color: var(--text-secondary);
-    margin-bottom: 32px;
-    transition: color 0.3s;
+.contact-link:hover {
+    color: var(--accent-magenta);
+    transform: translateY(-2px);
+    text-shadow: 0 0 15px rgba(255, 0, 68, 0.3);
 }
-.contact-phone:hover { color: var(--text-bright); }
-.contact-phone i { margin-right: 6px; color: var(--accent-green); }
+.contact-link:hover i {
+    color: var(--accent-magenta);
+}
 
 .contact-socials {
     display: flex;
@@ -1116,8 +1140,9 @@ body.cursor-hover #cursor-ring {
     .projects-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
     .edu-grid { grid-template-columns: 1fr; }
-    .contact-socials { gap: 10px; }
-    .social-link { width: 44px; height: 44px; font-size: 16px; }
+    .contact-socials { gap: 12px; }
+    .social-link { width: 46px; height: 46px; font-size: 18px; }
+    .contact-link { font-size: clamp(14px, 5vw, 18px); }
 }
 
 /* ---------- ANIMATIONS (GSAP targets) ---------- */
