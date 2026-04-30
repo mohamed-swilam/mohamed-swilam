@@ -20,7 +20,11 @@
         bootEl.classList.add('hidden');
         initHeroAnimations();
         ScrollTrigger.refresh();
+<<<<<<< HEAD
     }, 1500);
+=======
+    }, 2600);
+>>>>>>> b12a8cc (t)
 })();
 
 // ========================
@@ -623,7 +627,13 @@ if (footerYear) {
     const terminalBody = document.querySelector('.terminal-body');
     if (!termText || !terminalBody) return;
 
+    // Get current text and measure height to prevent layout shift
     const originalText = termText.textContent;
+    
+    // Set a fixed min-height based on current content before clearing it
+    const rect = terminalBody.getBoundingClientRect();
+    terminalBody.style.minHeight = `${rect.height}px`;
+
     termText.textContent = '';
     termText.style.visibility = 'visible';
 
@@ -650,6 +660,8 @@ if (footerYear) {
                     i++;
                     setTimeout(typeChar, 12);
                 } else {
+                    // Once typing is done, we can remove the fixed height 
+                    // to keep it responsive if the window resizes
                     terminalBody.style.minHeight = 'auto';
                 }
             }
