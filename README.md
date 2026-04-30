@@ -55,25 +55,20 @@ Passionate about developing production-ready applications that balance user expe
 
 [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)](https://nestjs.com/)
-[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-
+[![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)  
 [![REST API](https://img.shields.io/badge/RESTful_API-007ACC?style=for-the-badge)]()
 [![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)]()
-[![tRPC](https://img.shields.io/badge/tRPC-2596be?style=for-the-badge)]()
-
+[![tRPC](https://img.shields.io/badge/tRPC-2596be?style=for-the-badge)]()  
 [![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jwt&logoColor=white)]()
 [![OAuth2](https://img.shields.io/badge/OAuth2-0a0a0a?style=for-the-badge)]()
-[![RBAC](https://img.shields.io/badge/RBAC-0a0a0a?style=for-the-badge)]()
-
+[![RBAC](https://img.shields.io/badge/RBAC-0a0a0a?style=for-the-badge)]()  
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-2479A2?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-
+[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)  
 [![Prisma](https://img.shields.io/badge/Prisma-17a395?style=for-the-badge&logo=prisma&logoColor=white)](https://www.prisma.io/)
-[![TypeORM](https://img.shields.io/badge/TypeORM-315CDB?style=for-the-badge&logo=typeorm&logoColor=white)](https://typeorm.io/)
-
+[![TypeORM](https://img.shields.io/badge/TypeORM-315CDB?style=for-the-badge&logo=typeorm&logoColor=white)](https://typeorm.io/)  
 [![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
 [![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white)]()
-
+[![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh/)  
 [![Cloudinary](https://img.shields.io/badge/Cloudinary-072A4E?style=for-the-badge&logo=cloudinary&logoColor=white)](https://cloudinary.com/)
 [![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=for-the-badge&logo=stripe&logoColor=white)](https://stripe.com/)
 [![Nodemailer](https://img.shields.io/badge/Nodemailer-FF3A6E?style=for-the-badge)]()
@@ -83,19 +78,15 @@ Passionate about developing production-ready applications that balance user expe
 ### 🧩 Frontend Development
 
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
-
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)  
 [![App Router](https://img.shields.io/badge/App_Router-007ACC?style=for-the-badge)]()
 [![Server Components](https://img.shields.io/badge/Server_Components-61DAFB?style=for-the-badge)]()
-[![Server Actions](https://img.shields.io/badge/Server_Actions-007ACC?style=for-the-badge)]()
-
+[![Server Actions](https://img.shields.io/badge/Server_Actions-007ACC?style=for-the-badge)]()  
 [![React Query](https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge)]()
 [![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)]()
-[![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge)]()
-
+[![Zustand](https://img.shields.io/badge/Zustand-000000?style=for-the-badge)]()  
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Shadcn UI](https://img.shields.io/badge/ShadcnUI-000000?style=for-the-badge)](https://ui.shadcn.com/)
-
+[![Shadcn UI](https://img.shields.io/badge/ShadcnUI-000000?style=for-the-badge)](https://ui.shadcn.com/)  
 [![SEO](https://img.shields.io/badge/SEO_Optimization-4285F4?style=for-the-badge)]()
 [![Rendering](https://img.shields.io/badge/Rendering_Strategies-F24D27?style=for-the-badge)]()
 
@@ -104,9 +95,8 @@ Passionate about developing production-ready applications that balance user expe
 ### 🧪 Testing
 
 [![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)]()
-[![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge)]()
-[![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge)]()
-[![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge)]()
+[![Bun Test](https://img.shields.io/badge/Bun_Test-000000?style=for-the-badge&logo=bun&logoColor=white)](https://bun.sh/)
+
 
 ---
 
@@ -114,8 +104,7 @@ Passionate about developing production-ready applications that balance user expe
 
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)]()
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)]()
-
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)]()  
 [![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)]()
 [![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)]()
 
@@ -126,8 +115,7 @@ Passionate about developing production-ready applications that balance user expe
 [![Burp Suite](https://img.shields.io/badge/Burp%20Suite-F24D27?style=for-the-badge&logo=burpsuite&logoColor=white)](https://portswigger.net/burp)
 [![Nmap](https://img.shields.io/badge/Nmap-66CCFF?style=for-the-badge&logo=nmap&logoColor=white)](https://nmap.org/)
 [![Metasploit](https://img.shields.io/badge/Metasploit-FF4F79?style=for-the-badge&logo=metasploit&logoColor=white)](https://www.metasploit.com/)
-[![Wireshark](https://img.shields.io/badge/Wireshark-005C9C?style=for-the-badge&logo=wireshark&logoColor=white)](https://www.wireshark.org/)
-
+[![Wireshark](https://img.shields.io/badge/Wireshark-005C9C?style=for-the-badge&logo=wireshark&logoColor=white)](https://www.wireshark.org/)  
 [![OWASP](https://img.shields.io/badge/OWASP_Top_10-DC382D?style=for-the-badge)]()
 [![Bug Bounty](https://img.shields.io/badge/Bug_Bounty-F85D7F?style=for-the-badge)]()
 [![API Security](https://img.shields.io/badge/API_Security-4285F4?style=for-the-badge)]()
@@ -139,8 +127,7 @@ Passionate about developing production-ready applications that balance user expe
 
 [![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
-
+[![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)  
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 [![Render](https://img.shields.io/badge/Render-37474F?style=for-the-badge&logo=render&logoColor=white)](https://render.com/)
 
@@ -152,6 +139,9 @@ Passionate about developing production-ready applications that balance user expe
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+---
+
 # 🏗️ Projects
 
 <a href="https://github.com/The-Team-Dream/SecureMail"><img width="400" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=The-Team-Dream&repo=SecureMail&theme=react&bg_color=1F222E&title_color=169D7f&hide_border=true&icon_color=F8D866&show_icons=false&show_description=false" alt="SecureMail"></a>
