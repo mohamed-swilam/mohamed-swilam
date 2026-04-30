@@ -141,10 +141,16 @@ Passionate about developing production-ready applications that balance user expe
 - **Key Features:** Secure login, email sending/receiving, phishing and spam detection, malicious link and attachment scanning, AI email analysis, threat reports, and dashboard analytics.  
 - **Technology:** Node.js, Nest.js, MySQL, REST APIs, JWT, Gmail API, Outlook API, IMAP/SMTP, ChatGPT API, VirusTotal API, React, Next.js, Tailwind CSS, JavaScript.  
 ##
-<a href="https://github.com/mohamed-swilam/DeverCrowd-Portfolio"><img width="400" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=mohamed-swilam&repo=DeverCrowd-Portfolio&theme=react&bg_color=1F222E&title_color=169D7f&hide_border=true&icon_color=F8D866&show_icons=false&show_description=false" alt="SecureMail"></a>
-- **Overview:** Built a full-stack portfolio web application, including backend APIs and responsive frontend interface, with a dynamic admin dashboard for complete content control and management.
+<a href="https://github.com/swilam0/MowaChat"><img width="400" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=swilam0&repo=MowaChat&theme=react&bg_color=1F222E&title_color=169D7f&hide_border=true&icon_color=F8D866&show_icons=false&show_description=false" alt="SecureMail"></a>
+
+- **Overview:** Full-featured real-time chat application with Stories, Direct Messages, Group Chats, and a rich media engine — built with a focus on privacy controls, performance, and seamless UX — powered by 25+ real-time Socket.io events.
+- **Key Features:** Real-time messaging via Socket.io: typing indicators, read receipts, online presence, and browser push notifications and Stories with 24-hour auto-expiry (MongoDB TTL), live emoji reactions, viewer tracking, and an explore page for public stories.
+- **Technology:** Node.js, Express.js, Socket.io, MongoDB, Redis, Cloudinary, JWT, Next.js, React Query, Tailwind CSS, TypeScript.  
+##
+<a href="https://github.com/Dever-Crowd/DeverCrowd-Portfolio"><img width="400" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=Dever-Crowd&repo=DeverCrowd-Portfolio&theme=react&bg_color=1F222E&title_color=169D7f&hide_border=true&icon_color=F8D866&show_icons=false&show_description=false" alt="SecureMail"></a>
+- **Overview:** Startup portfolio web application with a fully controlled admin dashboard to manage the company's price plans, services, projects, and blog content.
 - **Key Features:** Admin authentication system, content management dashboard, dynamic control of website sections, services and projects management, blog/news management, contact messages management, and rolebased access.  
-  - **Technology:** Node.js, Express.js, MongoDB, Mongoose, RESTful APIs, JWT Authentication, React, NextJS, HTML5, CSS3, Tailwind, JavaScript.
+- **Technology:** Node.js, Express.js, MongoDB, Mongoose, RESTful APIs, JWT Authentication, React, NextJS, HTML5, CSS3, Tailwind, JavaScript.
 
 ---
 
