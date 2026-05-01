@@ -623,7 +623,7 @@ if (footerYear) {
     const terminalBody = document.querySelector('.terminal-body');
     if (!termText || !terminalBody) return;
 
-    const originalText = termText.textContent;
+    const originalText = termText.textContent.replace(/\s+/g, ' ').trim();
     termText.textContent = '';
     termText.style.visibility = 'visible';
 
