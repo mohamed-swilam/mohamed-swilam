@@ -1,0 +1,26 @@
+[
+  {
+    "id": "20xss",
+    "title": "20+ XSS Vulnerabilities Using a Simple Technique",
+    "date": "Sep 2024",
+    "tags": [
+      "XSS",
+      "Automation",
+      "Bug Bounty"
+    ],
+    "summary": "Discovering 20+ XSS vulnerabilities at once using a simple technique involving subdomain enumeration and automation.",
+    "file": "assets/writeups/20xss/20xss.md"
+  },
+  {
+    "id": "broken-social-login",
+    "title": "Broken Social Login – Authentication Bypass Leading to Account Takeover",
+    "date": "Aug 2026",
+    "tags": [
+      "Authentication",
+      "PKCE",
+      "JWT"
+    ],
+    "summary": "The POST /api/v1/oauth/sociallogin endpoint authenticates users based entirely on client-supplied JSON and does not validate the identity token's signature, issuer, audience, or the binding between the supplied emailid / socialUId and a real Google/Firebase identity.",
+    "file": "assets/writeups/broken-social-login/broken-social-login.md"
+  }
+]

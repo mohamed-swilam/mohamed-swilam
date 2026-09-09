@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cybersecurity writeup and research." />
+    <title>Writeup - Swilam</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/icons/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <!-- Markdown & Highlighting Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.9/purify.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="main-nav">
+        <a href="about.html" class="nav-logo">SWILAM</a>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="writeups.html">Writeups</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main>
+        <!-- ===== INDIVIDUAL WRITEUP ===== -->
+        <section id="writeup-detail" class="section" style="padding-top: 140px;">
+            <div class="container writeup-layout">
+                <div class="writeup-main">
+                    <a href="writeups.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Writeups</a>
+
+                    <!-- Mobile TOC injected here via script.js -->
+                    <div id="toc-mobile-container"></div>
+
+                    <!-- Content will be injected here via script.js -->
+                    <div id="writeup-content" class="markdown-body">
+                        <div class="loading-state">
+                            <i class="fas fa-circle-notch fa-spin"></i> Loading writeup...
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="toc-desktop-container" id="toc-desktop-container">
+                    <!-- Desktop TOC injected here via script.js -->
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; <span id="year">2025</span> Mohamed Hamad Swilam.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

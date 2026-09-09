@@ -48,7 +48,7 @@
 
 </div>
 
-I'm **Mohamed Hamad Swilam**, a **Penetration Tester** and **Security Researcher** who started as a Backend Software Engineer — and that's exactly my edge. I understand how applications are *built*, which means I know exactly where they *break*. I spend my time hunting for vulnerabilities in web apps and APIs, hardening security pipelines, and breaking things on purpose so others don't have to break them by accident.
+I'm **Mohamed Hamad Swilam**, a **Penetration Tester** and **Security Researcher** who started as a Backend Software Engineer - and that's exactly my edge. I understand how applications are *built*, which means I know exactly where they *break*. I spend my time hunting for vulnerabilities in web apps and APIs, hardening security pipelines, and breaking things on purpose so others don't have to break them by accident.
 
 ```yaml
 role:            Junior Penetration Tester / AppSec Engineer / Bug Bounty Hunter
@@ -73,11 +73,11 @@ currently:       Searching for IDORs, SSRFs & broken auth in the wild
 | 🎯 | Achievement |
 |:---:|:---|
 | 🐞 | **30+ valid vulnerabilities** reported through Bug Bounty programs |
-| 🏗️ | **Creator of FarmCTF** — a CTF platform for offensive security practice |
-| 🚩 | **Active CTF Player** — consistently competing in offensive security challenges |
-| 📧 | **Developer of SecureMail** — AI-powered Email Security Platform (Graduation Project) |
-| 🧮 | **ECPC Participant** — Egyptian Collegiate Programming Contest |
-| 🤝 | **Co-founder of DeverCrowd** — tech community for developers & security enthusiasts |
+| 🏗️ | **Creator of FarmCTF** - a CTF platform for offensive security practice |
+| 🚩 | **Active CTF Player** - consistently competing in offensive security challenges |
+| 📧 | **Developer of SecureMail** - AI-powered Email Security Platform (Graduation Project) |
+| 🧮 | **ECPC Participant** - Egyptian Collegiate Programming Contest |
+| 🤝 | **Co-founder of DeverCrowd** - tech community for developers & security enthusiasts |
 
 </div>
 
@@ -104,7 +104,7 @@ currently:       Searching for IDORs, SSRFs & broken auth in the wild
 </div>
 <br/>
 
-#### 📧 SecureMail — Email Security Platform
+#### 📧 SecureMail - Email Security Platform
 
 > An end-to-end **Email Security Platform** built to detect phishing, lookalike domains, and malicious payloads before they reach the inbox.
 
@@ -124,7 +124,7 @@ currently:       Searching for IDORs, SSRFs & broken auth in the wild
 
 </div>
 
-#### 🚩 FarmCTF — Offensive Security Training Platform
+#### 🚩 FarmCTF - Offensive Security Training Platform
 
 > A **Capture The Flag platform** built from scratch to help others practice penetration testing, exploitation, and offensive security in a safe, gamified environment.
 
@@ -266,7 +266,7 @@ currently:       Searching for IDORs, SSRFs & broken auth in the wild
 <!-- ===================== FOOTER ===================== -->
 <div align="center">
 
-### "I don't just write code — I break it, understand it, and secure it."
+### "I don't just write code - I break it, understand it, and secure it."
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=swilam0.swilam0&style=for-the-badge&color=00FF9C)
 

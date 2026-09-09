@@ -1,0 +1,20 @@
+[
+  {
+    "name": "SecureMail",
+    "url": "https://github.com/The-Team-Dream/SecureMail",
+    "description": "AI-powered security pipeline connecting Gmail/Outlook/IMAP to classify phishing, spam, and malware with multi-provider OAuth and threat detection endpoints.",
+    "tech": ["Node.js", "NestJS", "PostgreSQL", "AI/LLM"]
+  },
+  {
+    "name": "SwiHack",
+    "url": "https://github.com/swilam0/Swihack",
+    "description": "Distributed vulnerability scanning framework for automated web application security assessment and large-scale reconnaissance, featuring an AI-assisted analysis engine.",
+    "tech": ["Go", "Python", "Redis", "Docker"]
+  },
+  {
+    "name": "FarmCTF",
+    "url": "https://github.com/swilam0/FarmCTF",
+    "description": "A custom Capture The Flag platform with dynamic scoreboards and dockerized web exploitation challenges designed for security enthusiasts.",
+    "tech": ["Node.js", "Docker", "MongoDB", "Security Labs"]
+  }
+]

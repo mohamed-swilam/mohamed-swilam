@@ -1,0 +1,20 @@
+[
+  {
+    "date": "Aug 2026 - Present",
+    "role": "Penetration Tester",
+    "organization": "@Duckurity",
+    "description": "Conducted penetration testing on real-world web applications, analyzing authentication mechanisms, authorization, APIs, and business logic, produced professional security reports. Build CTFs challenges for the Openlabs platform."
+  },
+  {
+    "date": "Mar 2025 - Mar 2026",
+    "role": "Software Engineer",
+    "organization": "@DeverCrowd",
+    "description": "Engineered secure backend architectures using Node.js and REST APIs. Implemented robust authentication, RBAC, and applied secure coding principles throughout the SDLC."
+  },
+  {
+    "date": "2023 - Present",
+    "role": "Bug Bounty Hunter",
+    "organization": "HackerOne & Bugcrowd",
+    "description": "Reported 30+ valid vulnerabilities across real-world web applications and APIs. Listed in multiple Hall of Fames (ClassDojo, ION Group). Specialized in manual Web Application & API Security Testing following OWASP Top 10 methodologies."
+  }
+]

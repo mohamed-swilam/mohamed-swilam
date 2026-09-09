@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Web & API",
+    "skills": ["AC/IDOR", "Business Logic", "OAuth/OIDC", "JWT", "Sessions Attacks", "SSRF", "Request Smuggling", "Race Conditions", "Deserialization", "Prototype Pollution", "GraphQL", "Cash Poisoning/Deception", "CORS/CSRF", "LFI/RFI", "XSS"]
+  },
+  {
+    "category": "Network & AD",
+    "skills": ["AD Attack Paths", "Kerberoasting", "AS-REP Roasting", "NTLM Relay", "Pass-the-Hash", "ACL/Delegation Abuse", "ADCS", "Lateral Movement", "Internal Pivoting", "SMB", "LDAP", "Kerberos Security", "LLMNR/NBNS poisoning", "Pass-the-Ticket"]
+  },
+  {
+    "category": "Mobile",
+    "skills": ["Android Security", "APK Analysis", "Runtime Instrumentation", "IPC/Intent Security", "WebView Security", "Deep Links", "Certificate Pinning", "Mobile API Security", "Reverse Engineering"]
+  },
+  {
+    "category": "Advanced",
+    "skills": ["Security Automation", "Custom Tooling", "Recon Pipelines", "Attack Surface Discovery", "Vulnerability Research", "Fuzzing", "Exploit Development", "Source Code Review", "Chained Exploitation", "Python", "Bash", "Go Security Automation"]
+  },
+  {
+    "category": "AI & Automation",
+    "skills": ["LLM-Assisted Reconnaissance", "Vulnerability Analysis", "Security Research & Reporting", "Custom Security Automation", "AI-Augmented Pentesting Workflows"]
+  },
+  {
+    "category": "Tools",
+    "skills": ["Burp Suite", "Fuff", "Nuclie", "SQLmap", "Nmap", "NetExec", "Impacket", "BloodHound", "Responder", "Wireshark", "Metasploit", "Frida", "MobSF", "JADX", "ADB", "APKtool", "Objection"]
+  }
+]
